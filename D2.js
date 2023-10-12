@@ -25,13 +25,26 @@ if (num1 !== 5) {
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let a = 20;
+if (a % 5 === 0) {
+  console.log("divisibile per 5");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num3 = 20;
+let num4 = 8;
+if (num3 === 8 && num4 === 8) {
+  console.log("il valore di entrambi è :" + " " + (num3, num4));
+} else if (num3 === 8) {
+  console.log("il valore del num3 è:" + " " + num3);
+} else if (num4 === 8) {
+  console.log("il valore del num4 è:" + " " + num4);
+} else if (num3 + num4 === 8 || num3 - num4 === 8 || num4 - num3 === 8) {
+  console.log("il valore della loro somma/sottrazione è :" + " " + "8");
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
