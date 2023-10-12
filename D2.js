@@ -34,16 +34,18 @@ if (a % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let num3 = 20;
-let num4 = 8;
-if (num3 === 8 && num4 === 8) {
-  console.log("il valore di entrambi è :" + " " + (num3, num4));
+let num2 = 1;
+let num3 = 6;
+if (num2 === 8 && num3 === 8) {
+  console.log("il valore di entrambi è :" + " " + (num2, num3));
+} else if (num2 === 8) {
+  console.log("il valore del num3 è:" + " " + num2);
 } else if (num3 === 8) {
-  console.log("il valore del num3 è:" + " " + num3);
-} else if (num4 === 8) {
-  console.log("il valore del num4 è:" + " " + num4);
-} else if (num3 + num4 === 8 || num3 - num4 === 8 || num4 - num3 === 8) {
+  console.log("il valore del num4 è:" + " " + num3);
+} else if (num2 + num3 === 8 || num2 - num3 === 8 || num3 - num2 === 8) {
   console.log("il valore della loro somma/sottrazione è :" + " " + "8");
+} else {
+  console.log("valore non verificato");
 }
 
 /* ESERCIZIO 5
@@ -51,23 +53,33 @@ if (num3 === 8 && num4 === 8) {
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+let totalShoppingCart = 0;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (totalShoppingCart > 50) {
+  const totalOrder = totalShoppingCart + 10;
+  console.log("il totale ada pagare è:", totalOrder);
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart2 = 602;
+totalShoppingCart2 = totalShoppingCart2 * 0.8;
+
+if (totalShoppingCart2 <= 50) {
+  const totalOrder = totalShoppingCart2 + 10;
+  console.log("totale con sconto Black Friday 20% su ogni prodotto :" + " " + totalOrder);
+} else {
+  console.log("totale con sconto Black Friday 20% su ogni prodotto :" + " " + totalShoppingCart2);
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -98,13 +110,6 @@ if (num3 === 8 && num4 === 8) {
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
-
-const me = {
-  name: "John",
-  lastName: "Doe",
-  skills: ["javascript", "html", "css"],
-};
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
