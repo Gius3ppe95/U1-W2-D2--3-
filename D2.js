@@ -34,8 +34,8 @@ if (a % 5 === 0) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let num2 = 1;
-let num3 = 6;
+let num2 = 20;
+let num3 = 12;
 if (num2 === 8 && num3 === 8) {
   console.log("il valore di entrambi è :" + " " + (num2, num3));
 } else if (num2 === 8) {
@@ -65,14 +65,16 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let totalShoppingCart2 = 602;
+let totalShoppingCart2 = 60;
 totalShoppingCart2 = totalShoppingCart2 * 0.8;
 
 if (totalShoppingCart2 <= 50) {
   const totalOrder = totalShoppingCart2 + 10;
-  console.log("totale con sconto Black Friday 20% su ogni prodotto :" + " " + totalOrder);
+  console.log("totale con sconto Black Friday 20% su ogni prodotto + 10 EURO DI SPEDIZIONE  :" + " " + totalOrder);
 } else {
-  console.log("totale con sconto Black Friday 20% su ogni prodotto :" + " " + totalShoppingCart2);
+  console.log(
+    "totale con sconto Black Friday 20% su ogni prodotto con spedizione gratuita è :" + " " + totalShoppingCart2
+  );
 }
 
 /* ESERCIZIO 7
@@ -80,6 +82,25 @@ if (totalShoppingCart2 <= 50) {
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
+
+let c = 56;
+let d = 67;
+let e = 30;
+if (c >= d && d >= e) {
+  console.log(c, d, e);
+} else if (c >= e && e >= d) {
+  console.log(c, e, d);
+} else if (d >= e && e >= c) {
+  console.log(d, e, c);
+} else if (d >= c && c >= e) {
+  console.log(d, c, e);
+} else if (e >= c && c >= d) {
+  console.log(e, c, d);
+} else if (e >= d && d >= c) {
+  console.log(e, c, d);
+} else {
+  console.log(" i tre valori sono uguali");
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
