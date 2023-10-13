@@ -106,14 +106,25 @@ if (c >= d && d >= e) {
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let dynamicValue = 5;
+if (typeof dynamicValue === "number") {
+  console.log("il valore è un numero");
+} else {
+  console.log("il valore non è un numero ");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+let n3 = 0;
+if (n3 % 2 === 0 && n3 !== 0) {
+  console.log(" il valore è pari");
+} else if (n3 === 0) {
+  console.log(" il valore è 0 ");
+} else {
+  console.log("il valore è dispari ");
+}
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   let val = 7
@@ -125,8 +136,6 @@ if (c >= d && d >= e) {
       console.log("Uguale a 10 o maggiore");
     }
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
